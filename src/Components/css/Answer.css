@@ -1,0 +1,9 @@
+.ans {
+  background-color: black;
+  margin: 0.5rem 2rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+.ans:hover {
+  background-color: rgb(39, 38, 38);
+}

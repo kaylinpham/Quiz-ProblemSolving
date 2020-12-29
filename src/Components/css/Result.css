@@ -1,0 +1,32 @@
+.result h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  margin: 0;
+}
+.result div {
+  text-align: center;
+  font-size: 3rem;
+}
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  width: 8rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+.result button:hover {
+  background-color: rgb(39, 38, 38);
+}

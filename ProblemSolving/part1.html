@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Bai 1
+      function notMatch(arr1, arr2) {
+        let arr = [];
+        for (let i = 0; i < arr1.length; i++) {
+          if (arr2.indexOf(arr1[i]) === -1) {
+            arr.push(arr1[i]);
+          }
+          if (arr1.indexOf(arr2[i]) === -1) {
+            arr.push(arr2[i]);
+          }
+        }
+        return arr;
+      }
+
+      //Bai 2
+      function ranking(arr) {
+        let org = [...arr];
+        let result = [
+          ...arr.sort((a, b) => {
+            return b.points - a.points;
+          }),
+        ];
+        result = [
+          ...result.sort((a, b) => {
+            return b.GD - a.GD;
+          }),
+        ];
+        result = [
+          ...result.sort((a, b) => {
+            return b.name - a.name;
+          }),
+        ];
+        for (let i = 0; i < org.length; i++) {
+          org[i].position = result.indexOf(org[i]) + 1;
+        }
+        return org;
+      }
+    </script>
+  </body>
+</html>
